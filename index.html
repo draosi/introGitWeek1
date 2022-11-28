@@ -1,0 +1,66 @@
+<!DOCTYPE html> <!--obligatoire, sinon ca ne marche pas-->
+<html>
+  <head>
+    <title>My first static website</title> <!--titre de l'onglet sur internet-->
+    <meta charset="UTF-8" />
+    <link rel="styleseeht" href="./style.css"> <!--toujour dans le tag "head" - relie du css--> <!--toujouts stylesheet dans le "rel"-->
+  </head>
+  <body> <!--ce que l'on voit sur la page internet-->
+    <div id="container"> <!--div permet d'isoler un code de block-->
+      <nav id="topnav">
+        <a href="index.html">HOME</a> | <a href="./about.html">ABOUT US</a> | <a href="menu.html">MENU</a> |
+        <a href="contact.html">CONTACT US</a> <!--./ permet de joindre un fichier qui se trouve au même niveau-->
+      </nav>
+
+      <section id="content"> <!--section c'est comme le tag div mais moins large (on pourrait mettre un section dans une div)-->
+        <h1>The IronHack Breakfast Place</h1>
+        <p>Here you will find all sorts of delicious treats</p>
+        <figure>
+          <img src="grosDej.jpeg" width="400" alt="healthy breakfast" />
+          <figcaption>powered by brekkie.</figcaption>
+        </figure>
+      </section>
+
+      <footer>
+        <p class="love">Made with love by Ironhack</p>
+      </footer>
+    </div>
+
+    <div>
+        <table>
+            <tr> <!--table row-->
+              <th>Name</th> <!--table header-->
+              <th>Bootcamp</th>
+              <th>City</th>
+            </tr>
+            <tr>
+              <td>Jose Perez</td> <!--table data-->
+              <td>FullStack WebDev</td>
+              <td>Madrid</td>
+            </tr>
+            <tr>
+              <td>Michael Smith</td>
+              <td>FrontEnd WebDev</td>
+              <td>Barcelona</td>
+            </tr>
+            <tr>
+              <td>Ariel Quinones</td>
+              <td>MasterChef WebDev</td>
+              <td>Miami</td>
+            </tr>
+          </table>          
+    </div>
+
+    <div>
+        <form action="" method="post">
+            <label for="name">Name:</label> <!--type de data que l'on recherche-->
+            <input id="name" type="text" /> <!--ce que l'utilisateur rentre comme data-->
+            <button type="submit">Save</button> 
+            <label for="lastName">Last Name:</label>
+            <input id="lastName" type="text" />
+            <button type="submit">Save</button>
+          </form>          
+    </div>
+    <script src="./index.js"></script> <!--toujours avant la fermeture du tag "body" - relie du fichier js-->
+  </body>
+</html>
